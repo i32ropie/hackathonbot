@@ -10,6 +10,11 @@ def start(message):
     bot.reply_to(message, 'Hello, ' + message.from_user.first_name)
 
 
+@bot.message_handler(commands=['test'])
+def test(message):
+    bot.reply_to(message, 'Has escrito /test')
+
+
 @bot.message_handler(commands=['change'])
 def change(message):
     """

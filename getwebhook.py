@@ -13,7 +13,7 @@ def get_webhook():
     logging.info('Getting webhook...')
     response = bot.get_webhook_info()
     if not response.url:
-        print "No hay url"
+        print ("No hay url")
         return
     print ("URL: %s" % response.url)
 
